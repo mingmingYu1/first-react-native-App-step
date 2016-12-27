@@ -51,7 +51,8 @@
    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-android-sdk-platforms-windows.png)
 
    在SDK Tools窗口中，选择Show Package Details，然后在Android SDK Build Tools中勾选Android SDK Build-Tools 23.0.1。（必须是这个版本）
-   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/imagesreact-native-android-studio-android-sdk-build-tools-windows.png)
+
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/imagesreact-native-android-studio-android-sdk-build-tools-windows.png)
 
 6、ANDROID_HOME环境变量
 
@@ -110,6 +111,7 @@
    a、Android模拟器，使用的是genymotion
    
      查看当前的设备列表信息命令：adb devices
+     
      ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices1.png)
    
    b、Android真机测试
@@ -164,7 +166,7 @@
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-3113a031fbdae797.png)
 
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-bbaaf68948d8722a.png)
-       
+
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-7c565d70be087c9d.png)
        
        双击RR键刷新
