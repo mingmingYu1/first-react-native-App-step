@@ -56,57 +56,57 @@
 
 6、ANDROID_HOME环境变量
 
-  确保ANDROID_HOME环境变量正确地指向了你安装的Android SDK的路径。
-  打开控制面板 -> 系统和安全 -> 系统 -> 高级系统设置 -> 高级 -> 环境变量 -> 新建
+   确保ANDROID_HOME环境变量正确地指向了你安装的Android SDK的路径。
+   打开控制面板 -> 系统和安全 -> 系统 -> 高级系统设置 -> 高级 -> 环境变量 -> 新建
 
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-sdk-environment-variable-windows.png)
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-sdk-environment-variable-windows.png)
 
 7、将Android SDK的Tools目录添加到PATH变量中
 
-  你可以把Android SDK的tools和platform-tools目录添加到PATH变量中，以便在终端中运行一些Android工具，例如android avd或是adb logcat等
+   你可以把Android SDK的tools和platform-tools目录添加到PATH变量中，以便在终端中运行一些Android工具，例如android avd或是adb logcat等
 
-  打开控制面板 -> 系统和安全 -> 系统 -> 高级系统设置 -> 高级 -> 环境变量 -> 选中PATH -> 双击进行编辑
+   打开控制面板 -> 系统和安全 -> 系统 -> 高级系统设置 -> 高级 -> 环境变量 -> 选中PATH -> 双击进行编辑
 
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-tools-environment-variable-windows.png)
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-tools-environment-variable-windows.png)
 
 8、安装git
 
-  命令： choco install git
+   命令： choco install git
   
-  另外你也可以直接去下载Git for Windows。 在安装过程中注意勾选"Run Git from Windows Command Prompt"，这样才会把git命令添加到PATH环境变量中
+   另外你也可以直接去下载Git for Windows。 在安装过程中注意勾选"Run Git from Windows Command Prompt"，这样才会把git命令添加到PATH环境变量中
   
 9、安装Genymotion（安卓虚拟机,比起Android Studio自带的原装模拟器，Genymotion是一个性能更好的选择，但它只对个人用户免费）
   
-  下载和安装Genymotion（译注：不要被里面的价格唬住了，个人免费的链接可能不明显，请仔细寻找！另外，genymotion需要依赖VirtualBox虚拟机，下载选项中提   供了包含VirtualBox和不包含的选项，请按需选择）。
+   下载和安装Genymotion（译注：不要被里面的价格唬住了，个人免费的链接可能不明显，请仔细寻找！另外，genymotion需要依赖VirtualBox虚拟机，下载选项中提   供了包含VirtualBox和不包含的选项，请按需选择）。
   
-  打开Genymotion。如果你还没有安装VirtualBox，则此时会提示你安装。
+   打开Genymotion。如果你还没有安装VirtualBox，则此时会提示你安装。
   
-  创建一个新模拟器。
+   建一个新模拟器。
   
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/Genymotion.png)
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/Genymotion.png)
   
-  点击start
+   点击start
 
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/GenymotionShell.png)
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/ images/GenymotionShell.png)
   
 10、下载react-native项目
 
-    react-native init AwesomeProject
+   react-native init AwesomeProject
 
 11、有个常见的问题是在你运行react-native
 
-    run-android命令后，Packger可能不会自动运行。此时你可以手动启动它
+   run-android命令后，Packger可能不会自动运行。此时你可以手动启动它
 
-    cd AwesomeProject
-    react-native start
-    
+   cd AwesomeProject
+   react-native start
+
    访问：http://localhost:8081/index.android.bundle?platform=android
    
    连接成功如图
    
    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/platform=android.png)
     
-    如果你碰到了ERROR Watcher took too long to load的报错，请尝试将这个文件中的MAX_WAIT_TIME值改得更大一些 (文件在node_modules/react-native/目     录下)。
+   如果你碰到了ERROR Watcher took too long to load的报错，请尝试将这个文件中的MAX_WAIT_TIME值改得更大一些 (文件在node_modules/react-native/目     录下)。
  
  12、Android平台运行（联机测试）
    
@@ -114,19 +114,19 @@
    
      查看当前的设备列表信息命令：adb devices
      
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices1.png)
+     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices1.png)
    
-    Android真机测试
+     Android真机测试
     
-    如果你需要应用运行在真机设备中，那么我们首先设备要开启USB调试模式
+     如果你需要应用运行在真机设备中，那么我们首先设备要开启USB调试模式
       
-    真机打开USB调试模式之后，然后连接电脑，再次命令行adb 
+     真机打开USB调试模式之后，然后连接电脑，再次命令行adb 
 
-    devices可以查看当前的设备列表信息，如下图所示： 
+     devices可以查看当前的设备列表信息，如下图所示： 
 
-    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices2.png)
-      
-     现在大家可以看到里边有一台设备已经连接了，不过如果我们需要运行应用的话，那我们必须确保当前只有一台设备连接否则会报错，光是连接了设备并没有完成步      骤，还是要让设备和电脑在同一个WiFi环境下面。
+     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices2.png)
+
+     现在大家可以看到里边有一台设备已经连接了，不过如果我们需要运行应用的话，那我们必须确保当前只有一台设备连接否则会报错，光是连接了设备并没有完成步骤，还是要让设备和电脑在同一个WiFi环境下面。
    
   13、运行react-native run-android
      
@@ -172,6 +172,6 @@
      
      ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-7c565d70be087c9d.png)
        
-      双击RR键刷新
+     双击RR键刷新
      
     
