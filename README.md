@@ -33,3 +33,4 @@
    否则在react-native run-android时会报appcompat-v7包找不到的错误。
    
    在初步安装完成后，选择Custom安装项：
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-sdk-environment-variable-windows.png)
