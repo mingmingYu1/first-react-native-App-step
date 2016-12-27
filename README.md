@@ -35,32 +35,38 @@
    确定所有安装都勾选了，尤其是Android SDK和Android Device Emulator。
    
    在初步安装完成后，选择Custom安装项：
+
    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-custom-install-windows.png)
    
    检查已安装的组件，尤其是模拟器和HAXM加速驱动。
+
    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-verify-installs-windows.png)
    
    安装完成后，在Android Studio的欢迎界面中选择Configure | SDK Manager。
+
    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-configure-sdk-windows.png)
    
-  在SDK Platforms窗口中，选择Show Package Details，然后在Android 6.0 (Marshmallow)中勾选Google APIs、Intel x86 Atom System Image、Intel x86   Atom_64 System Image以及Google APIs Intel x86 Atom_64 System Image
-![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-android-sdk-platforms-windows.png)
+   在SDK Platforms窗口中，选择Show Package Details，然后在Android 6.0 (Marshmallow)中勾选Google APIs、Intel x86 Atom System Image、Intel x86   Atom_64 System Image以及Google APIs Intel x86 Atom_64 System Image
 
-  在SDK Tools窗口中，选择Show Package Details，然后在Android SDK Build Tools中勾选Android SDK Build-Tools 23.0.1。（必须是这个版本）
-![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-android-sdk-build-tools-windows.png)
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-studio-android-sdk-platforms-windows.png)
+
+   在SDK Tools窗口中，选择Show Package Details，然后在Android SDK Build Tools中勾选Android SDK Build-Tools 23.0.1。（必须是这个版本）
+   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/imagesreact-native-android-studio-android-sdk-build-tools-windows.png)
 
 6、ANDROID_HOME环境变量
 
   确保ANDROID_HOME环境变量正确地指向了你安装的Android SDK的路径。
   打开控制面板 -> 系统和安全 -> 系统 -> 高级系统设置 -> 高级 -> 环境变量 -> 新建
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-sdk-environment-variable-    windows.png)
+
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-sdk-environment-variable-windows.png)
 
 7、将Android SDK的Tools目录添加到PATH变量中
 
   你可以把Android SDK的tools和platform-tools目录添加到PATH变量中，以便在终端中运行一些Android工具，例如android avd或是adb logcat等
 
   打开控制面板 -> 系统和安全 -> 系统 -> 高级系统设置 -> 高级 -> 环境变量 -> 选中PATH -> 双击进行编辑
-  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-tools-environment-        variable-windows.png)
+
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/react-native-android-tools-environment-variable-windows.png)
 
 8、安装git
 
@@ -79,12 +85,17 @@
   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/Genymotion.png)
   
   点击start
+
   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/GenymotionShell.png)
   
 10、下载react-native项目
+
     react-native init AwesomeProject
 
-11、有个常见的问题是在你运行react-native run-android命令后，Packger可能不会自动运行。此时你可以手动启动它
+11、有个常见的问题是在你运行react-native
+
+    run-android命令后，Packger可能不会自动运行。此时你可以手动启动它
+
     cd AwesomeProject
     react-native start
     
@@ -95,6 +106,7 @@
     如果你碰到了ERROR Watcher took too long to load的报错，请尝试将这个文件中的MAX_WAIT_TIME值改得更大一些 (文件在node_modules/react-native/目     录下)。
  
  13、Android平台运行（联机测试）
+
    a、Android模拟器，使用的是genymotion
    
      查看当前的设备列表信息命令：adb devices
@@ -103,14 +115,18 @@
    b、Android真机测试
       如果你需要应用运行在真机设备中，那么我们首先设备要开启USB调试模式
       
-      真机打开USB调试模式之后，然后连接电脑，再次命令行adb devices可以查看当前的设备列表信息，如下图所示： 
+      真机打开USB调试模式之后，然后连接电脑，再次命令行adb 
+
+      devices可以查看当前的设备列表信息，如下图所示： 
+
       ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices2.png)
       
    现在大家可以看到里边有一台设备已经连接了，不过如果我们需要运行应用的话，那我们必须确保当前只有一台设备连接否则会报错，光是连接了设备并没有完成步      骤，还是要让设备和电脑在同一个WiFi环境下面。
    
   14、运行react-native run-android
      
-     接着就开始编译代码了，然后运行程序到设备中了。其实这时，你会发现会发生屏幕是红色的。截图如下： 
+     接着就开始编译代码了，然后运行程序到设备中了。其实这时，你会发现会发生屏幕是红色的。截图如下：
+
      ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/startEror.png)
      
      解决步骤如下：
@@ -128,20 +144,27 @@
      Android5.0以下版本解决方式：
      
        a. 摇晃设备或者命令行输入adb shell input keyevent 82，打开开发者菜单，如下效果： 
+
           ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/ReloadJs.png)
 	
         b. 点击Dev Setting进入，然后选择Debug server host & port for device 
      
        c. 输入电脑的IP地址和端口号（主要查看电脑的IP地址，这边用我的IP地址和端口，具体根据实际情况哦），截图如下： 
+
           ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/zhengjiIp.png)
 	
        d. 回到开发者菜单，然后选择点击Reload JS.重新加载即可
      
      虚拟机调试解决方法  
+
        app启动之后会提示无法连接到服务器，需要在app上设置服务器的ip和port 
+
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-74dd0b6a0750f44c.png)
+
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-3113a031fbdae797.png)
+
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-bbaaf68948d8722a.png)
+       
        ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-7c565d70be087c9d.png)
        
        双击RR键刷新
