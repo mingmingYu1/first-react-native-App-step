@@ -1,12 +1,12 @@
 1、下载chocolatey软件，用于安装windows上的系统软件，如node，git等 
 
-   命令： 
-     @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object ne   t.webclient).DownloadString
-     ('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+  命令： 
+    @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object ne   t.webclient).DownloadString
+    ('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 	 
 2、下载Python2,  注意目前不支持Python 3版本
 
-   命令： choco install python2 （用chocolatey下载）
+  命令： choco install python2 （用chocolatey下载）
 
 3、下载node
 
