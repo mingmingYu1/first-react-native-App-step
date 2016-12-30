@@ -128,44 +128,42 @@
      现在大家可以看到里边有一台设备已经连接了，不过如果我们需要运行应用的话，那我们必须确保当前只有一台设备连接否则会报错，光是连接了设备并没有完成步骤，还是要让设备和电脑在同一个WiFi环境下面。
    
   13、运行react-native run-android/<br>
-     接着就开始编译代码了，然后运行程序到设备中了。其实这时，你会发现会发生屏幕是红色的。截图如下：/<br>
-     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/startEror.png)
+  
+  接着就开始编译代码了，然后运行程序到设备中了。其实这时，你会发现会发生屏幕是红色的。截图如下：/<br>
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/startError.png)
      
-     解决步骤如下
+  解决步骤如下
      
-     Android 5.0以上及更高版本通过以下方式： 
+  Android 5.0以上及更高版本通过以下方式： 
      
-     使用adb reverse命令 
+  使用adb reverse命令 
      
-     首先你的设备连接电脑，然后打开USB调试模式。接着命令行运行 
+  首先你的设备连接电脑，然后打开USB调试模式。接着命令行运行 
      
-     adb reverse tcp:8081 tcp:8081 
+  adb reverse tcp:8081 tcp:8081 
      
-     然后我们就可以使用Reload JS和其他的开发选项了（目前没有测试）
+  然后我们就可以使用Reload JS和其他的开发选项了（目前没有测试）
      
-     Android5.0以下版本解决方式
+  Android5.0以下版本解决方式
      
-     摇晃设备或者命令行输入adb shell input keyevent 82，打开开发者菜单，如下效果：/<br> 
-     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/ReloadJs.png)
+  摇晃设备或者命令行输入adb shell input keyevent 82，打开开发者菜单，如下效果/<br> 
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/ReloadJs.png)
 	
-     点击Dev Setting进入，然后选择Debug server host & port for device 
+  点击Dev Setting进入，然后选择Debug server host & port for device 
      
-     输入电脑的IP地址和端口号（主要查看电脑的IP地址，这边用我的IP地址和端口，具体根据实际情况哦），截图如下：/<br/>
-     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/zhengjiIp.png)
+  输入电脑的IP地址和端口号（主要查看电脑的IP地址，这边用我的IP地址和端口，具体根据实际情况哦），截图如下/<br/>
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/zhengjiIp.png)
 	
-     回到开发者菜单，然后选择点击Reload JS.重新加载即可
+  回到开发者菜单，然后选择点击Reload JS.重新加载即可
      
-     虚拟机调试解决方法  
+  虚拟机调试解决方法  
 
-    app启动之后会提示无法连接到服务器，需要在app上设置服务器的ip和port/<br>
-    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-74dd0b6a0750f44c.png)
-     
-    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-3113a031fbdae797.png)
-     
-    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-bbaaf68948d8722a.png)
-     
-    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-7c565d70be087c9d.png)
+  app启动之后会提示无法连接到服务器，需要在app上设置服务器的ip和port/<br>
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-74dd0b6a0750f44c.png)
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-3113a031fbdae797.png)
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-bbaaf68948d8722a.png)
+  ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-7c565d70be087c9d.png)
        
-    双击RR键刷新
+  双击RR键刷新
      
     
