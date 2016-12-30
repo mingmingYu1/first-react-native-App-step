@@ -110,19 +110,19 @@
  
  12、Android平台运行（联机测试）
    
-     Android模拟器，使用的是genymotion
+    Android模拟器，使用的是genymotion
    
-     查看当前的设备列表信息命令：adb devices
+    查看当前的设备列表信息命令：adb devices
      
-     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices1.png)
+    ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices1.png)
    
-     Android真机测试
+    Android真机测试
     
-     如果你需要应用运行在真机设备中，那么我们首先设备要开启USB调试模式
+    如果你需要应用运行在真机设备中，那么我们首先设备要开启USB调试模式
       
-     真机打开USB调试模式之后，然后连接电脑，再次命令行adb 
+    真机打开USB调试模式之后，然后连接电脑，再次命令行adb 
 
-     devices可以查看当前的设备列表信息，如下图所示： 
+    devices可以查看当前的设备列表信息，如下图所示： 
 
   ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/adbDevices2.png)
 
@@ -130,7 +130,7 @@
    
   13、运行react-native run-android
      
-     接着就开始编译代码了，然后运行程序到设备中了。其实这时，你会发现会发生屏幕是红色的。截图如下：
+    接着就开始编译代码了，然后运行程序到设备中了。其实这时，你会发现会发生屏幕是红色的。截图如下：
 
     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/startEror.png)
      
@@ -162,7 +162,7 @@
      
      虚拟机调试解决方法  
 
-        app启动之后会提示无法连接到服务器，需要在app上设置服务器的ip和port
+    app启动之后会提示无法连接到服务器，需要在app上设置服务器的ip和port
      
     ![image](https://github.com/mingmingYu1/first-react-native-App-step/blob/master/images/2301838-74dd0b6a0750f44c.png)
      
